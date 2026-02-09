@@ -135,7 +135,7 @@ dmypy.json
 .idea
 
 # Data files
-data
+# data - CHANGE: commented out to allow csv to be reproduced
 figs
 old
 temp
