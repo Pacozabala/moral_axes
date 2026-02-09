@@ -18,7 +18,7 @@ This section documents the changes done to the files and code from the original 
 
 ## Data and External Resources
 
-This project makes use of several Moral Foundations Theory (MFT) lexicons and annotated datasets developed by prior research in moral psychology and computational social science.
+The base Mformer model uses multiple Moral Foundations Theory (MFT) lexicons and annotated datasets developed by prior research. These datasets are included **solely to support reproducibility of the experiments reported in the base Mformer study and this thesis**.
 
 ### Moral Foundations Lexicons
 
@@ -33,13 +33,11 @@ The following lexicons are used in this work:
 - **Extended Moral Foundations Dictionary (eMFD)**  
   A probabilistic extension of the MFD introduced by Hopp et al.
 
-The **eMFD** resource is distributed under the GNU GPL v3.0 license and is used in compliance with its licensing terms.
+The **eMFD** resource is distributed under the GNU GPL v3.0 license and used in compliance with its licensing terms.
 
-The **MFD** and **MFD 2.0** resources are publicly accessible for academic research but do not clearly specify redistribution rights. As such, these lexicons are included **solely for the purpose of reproducing the experiments described in this thesis**. All rights and credit remain with the original authors.
+The **MFD** and **MFD 2.0** resources are publicly accessible for academic research but do not clearly specify redistribution rights.
 
-No claim of ownership is made over these resources. Users are encouraged to obtain the original versions directly from the official sources listed below.
-
-### Official Sources
+### Lexicon Official Sources
 
 - MFD (original): https://moralfoundations.org  
 - MFD 2.0 (OSF): https://osf.io/whjt2  
@@ -47,7 +45,7 @@ No claim of ownership is made over these resources. Users are encouraged to obta
 
 ### Included Datasets
 
-This repository includes several annotated datasets used to construct and evaluate Moral Foundations Theory (MFT) classifiers. These datasets are included **solely to support reproducibility of the experiments reported in this thesis**.
+This repository includes several annotated datasets used to construct and evaluate Moral Foundations Theory (MFT) classifiers. 
 
 - **Annotated News Articles**  
   - `coded_news.pkl`: News articles used in prior work to construct the eMFD lexicon.  
@@ -55,30 +53,30 @@ This repository includes several annotated datasets used to construct and evalua
 
 - **Annotated Tweets (MFTC)**  
   - `MFTC_V4.json`: Tweet IDs and corresponding Moral Foundations annotations.  
-  - Some tweet texts may be unavailable due to platform policies or deletion. Where possible, original tweet texts were obtained directly from the dataset authors for research purposes.
+  - Some tweet texts may be unavailable due to platform policies or deletion. Original tweet texts can be obtained directly from the dataset authors for research purposes.
 
 - **Annotated Reddit Comments (MFRC)**  
   - `final_mfrc_data.csv`: Annotated Reddit comments labeled with moral foundations.
 
 ### Usage Notes
 
-These datasets are made publicly available by their original authors for academic research. They are included here **unchanged** and **without claim of ownership**, and all rights remain with the respective creators.
+These lexicons and datasets are made publicly available by their original authors for academic research. They are included here **unchanged** and **without claim of ownership**, and all rights remain with the respective creators.
 
 The datasets are provided to enable:
 - Reproduction of preprocessing steps
 - Replication of model training and evaluation
 - Transparency in experimental methodology
 
-Please contact the repository's maintainers if any of these need to be removed, in line with usage policies.
+Please contact the repository's maintainers if any of these need to be removed, in line with their respective usage policies.
 
-### Original Sources
+### Dataset Original Sources
 
 - Annotated news articles (OSF): https://osf.io/5r96b , https://osf.io/52qfe  
 - Moral Foundations Twitter Corpus (MFTC): https://osf.io/k5n7y  
 - Moral Foundations Reddit Corpus (MFRC): https://huggingface.co/datasets/USC-MOLA-Lab/MFRC
 
 
-The following is taken verbatim from the original Mformer repository:
+**The following is taken verbatim from the original Mformer repository:**
 
 # Measuring Moral Dimensions on Social Media with Mformer
 
