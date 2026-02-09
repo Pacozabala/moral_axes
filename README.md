@@ -1,3 +1,48 @@
+# Undergraduate Thesis Preamble
+
+This is to track changes and acknowledge the prior work done in this repository. The code and documentation is based on the original Mformer model, which can be found [here](https://github.com/joshnguyen99/moral_axes).
+
+## Modifications to original repository
+
+This section documents the changes done to the files and code from the original repository.
+
+| Filename    | Changes Done |
+| -------- | ------- |
+| requirements.txt | Changed pip module versions to work with Python 11.9 |
+
+## Data and External Resources
+
+This project makes use of several Moral Foundations Theory (MFT) lexicons and annotated datasets developed by prior research in moral psychology and computational social science.
+
+### Moral Foundations Lexicons
+
+The following lexicons are used in this work:
+
+- **Moral Foundations Dictionary (MFD)**  
+  Originally introduced by Graham et al. and made publicly available via the Moral Foundations website and OSF.
+
+- **Moral Foundations Dictionary 2.0 (MFD 2.0)**  
+  An updated version of the original MFD, distributed via the Open Science Framework (OSF).
+
+- **Extended Moral Foundations Dictionary (eMFD)**  
+  A probabilistic extension of the MFD introduced by Hopp et al.
+
+The **eMFD** resource is distributed under the GNU GPL v3.0 license and is used in compliance with its licensing terms.
+
+The **MFD** and **MFD 2.0** resources are publicly accessible for academic research but do not clearly specify redistribution rights. As such, these lexicons are included **solely for the purpose of reproducing the experiments described in this thesis**. All rights and credit remain with the original authors.
+
+No claim of ownership is made over these resources. Users are encouraged to obtain the original versions directly from the official sources listed below.
+
+### Official Sources
+
+- MFD (original): https://moralfoundations.org  
+- MFD 2.0 (OSF): https://osf.io/whjt2  
+- eMFD (OSF): https://osf.io/ufdcz  
+
+If you intend to reuse these resources beyond academic or non-commercial research, please consult the original authors or source repositories regarding licensing and permissions.
+
+The following is taken verbatim from the original Mformer repository:
+
 # Measuring Moral Dimensions on Social Media with Mformer
 
 This repository accompanies the following paper:
