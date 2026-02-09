@@ -39,8 +39,6 @@ No claim of ownership is made over these resources. Users are encouraged to obta
 - MFD 2.0 (OSF): https://osf.io/whjt2  
 - eMFD (OSF): https://osf.io/ufdcz  
 
-Please contact the repository's maintainers if these need to be removed.
-
 ## Datasets
 
 This repository includes several annotated datasets used to construct and evaluate Moral Foundations Theory (MFT) classifiers. These datasets are included **solely to support reproducibility of the experiments reported in this thesis**.
@@ -67,7 +65,7 @@ The datasets are provided to enable:
 - Replication of model training and evaluation
 - Transparency in experimental methodology
 
-Please contact the repository's maintainers if these need to be removed.
+Please contact the repository's maintainers if any of these need to be removed, in line with usage policies.
 
 ### Original Sources
 
