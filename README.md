@@ -2,13 +2,19 @@
 
 This is to track changes and acknowledge the prior work done in this repository. The code and documentation is based on the original Mformer model, which can be found [here](https://github.com/joshnguyen99/moral_axes).
 
+## Usage Guidelines
+
+Please use a Python 3.11 environment to run the modules. All required libraries can be found in the `requirements.txt` file.
+
 ## Modifications to original repository
 
 This section documents the changes done to the files and code from the original repository.
 
 | Filename    | Changes Done |
 | -------- | ------- |
-| requirements.txt | Changed pip module versions to work with Python 11.9 |
+| `requirements.txt` | Changed pip module versions to work with Python 3.11 |
+| `.gitignore` | Commented out 'data' to allow the dataset and lexicon folder to be included in the remote repository. |
+| `scripts/mfd/data/lexicons` | Created the `data` and `data/lexicons` folders to house downloaded dataset files. |
 
 ## Data and External Resources
 
@@ -39,11 +45,9 @@ No claim of ownership is made over these resources. Users are encouraged to obta
 - MFD 2.0 (OSF): https://osf.io/whjt2  
 - eMFD (OSF): https://osf.io/ufdcz  
 
-## Datasets
+### Included Datasets
 
 This repository includes several annotated datasets used to construct and evaluate Moral Foundations Theory (MFT) classifiers. These datasets are included **solely to support reproducibility of the experiments reported in this thesis**.
-
-### Included Datasets
 
 - **Annotated News Articles**  
   - `coded_news.pkl`: News articles used in prior work to construct the eMFD lexicon.  
