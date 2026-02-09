@@ -39,7 +39,42 @@ No claim of ownership is made over these resources. Users are encouraged to obta
 - MFD 2.0 (OSF): https://osf.io/whjt2  
 - eMFD (OSF): https://osf.io/ufdcz  
 
-If you intend to reuse these resources beyond academic or non-commercial research, please consult the original authors or source repositories regarding licensing and permissions.
+Please contact the repository's maintainers if these need to be removed.
+
+## Datasets
+
+This repository includes several annotated datasets used to construct and evaluate Moral Foundations Theory (MFT) classifiers. These datasets are included **solely to support reproducibility of the experiments reported in this thesis**.
+
+### Included Datasets
+
+- **Annotated News Articles**  
+  - `coded_news.pkl`: News articles used in prior work to construct the eMFD lexicon.  
+  - `highlights_raw.csv`: Human-annotated highlights indicating moral foundations and annotator information.
+
+- **Annotated Tweets (MFTC)**  
+  - `MFTC_V4.json`: Tweet IDs and corresponding Moral Foundations annotations.  
+  - Some tweet texts may be unavailable due to platform policies or deletion. Where possible, original tweet texts were obtained directly from the dataset authors for research purposes.
+
+- **Annotated Reddit Comments (MFRC)**  
+  - `final_mfrc_data.csv`: Annotated Reddit comments labeled with moral foundations.
+
+### Usage Notes
+
+These datasets are made publicly available by their original authors for academic research. They are included here **unchanged** and **without claim of ownership**, and all rights remain with the respective creators.
+
+The datasets are provided to enable:
+- Reproduction of preprocessing steps
+- Replication of model training and evaluation
+- Transparency in experimental methodology
+
+Please contact the repository's maintainers if these need to be removed.
+
+### Original Sources
+
+- Annotated news articles (OSF): https://osf.io/5r96b , https://osf.io/52qfe  
+- Moral Foundations Twitter Corpus (MFTC): https://osf.io/k5n7y  
+- Moral Foundations Reddit Corpus (MFRC): https://huggingface.co/datasets/USC-MOLA-Lab/MFRC
+
 
 The following is taken verbatim from the original Mformer repository:
 
