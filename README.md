@@ -20,6 +20,17 @@ This section documents the changes done to the files and code from the original 
 
 The base Mformer model uses multiple Moral Foundations Theory (MFT) lexicons and annotated datasets developed by prior research. These datasets are included **solely to support reproducibility of the experiments reported in the base Mformer study and this thesis**.
 
+### Usage Notes
+
+These lexicons and datasets are made publicly available by their original authors for academic research. They are included here **unchanged** and **without claim of ownership**, and all rights remain with the respective creators.
+
+The datasets are provided to enable:
+- Reproduction of preprocessing steps
+- Replication of model training and evaluation
+- Transparency in experimental methodology
+
+Please contact the repository's maintainers if any of these need to be removed, in line with their respective usage policies.
+
 ### Moral Foundations Lexicons
 
 The following lexicons are used in this work:
@@ -57,17 +68,6 @@ This repository includes several annotated datasets used to construct and evalua
 
 - **Annotated Reddit Comments (MFRC)**  
   - `final_mfrc_data.csv`: Annotated Reddit comments labeled with moral foundations.
-
-### Usage Notes
-
-These lexicons and datasets are made publicly available by their original authors for academic research. They are included here **unchanged** and **without claim of ownership**, and all rights remain with the respective creators.
-
-The datasets are provided to enable:
-- Reproduction of preprocessing steps
-- Replication of model training and evaluation
-- Transparency in experimental methodology
-
-Please contact the repository's maintainers if any of these need to be removed, in line with their respective usage policies.
 
 ### Dataset Original Sources
 
