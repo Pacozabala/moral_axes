@@ -12,6 +12,9 @@ from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 from nltk.corpus import stopwords
 from spacy.lang.en.stop_words import STOP_WORDS
 
+import nltk
+nltk.download('stopwords')
+
 nltk_stopwords = stopwords.words('english')
 
 stop_words = set(list(nltk_stopwords) +
