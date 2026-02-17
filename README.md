@@ -4,7 +4,36 @@ This is to track changes and acknowledge the prior work done in this repository.
 
 ## Usage Guidelines
 
+### Installation
+
 Please use a Python 3.11 environment to run the modules. All required libraries can be found in the `requirements.txt` file.
+
+To download SpaCy's en_core_web model, run the following command in your terminal:
+```bash
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
+```
+
+### Model Usage
+
+In the `scripts\mfd` folder, run the following command to merge the lexicons into one:
+```bash
+python build_mfd_lexicons.py
+```
+
+Then in the same folder, run the following to process the datasets. These will convert them all into CSVs with normalized labels and merge them all into one dataset. Please note that depending on the device, these commands may take a while to process.
+
+```bash
+python construct_emfd_data.py --output_path data/sentence_mf_counts.csv
+
+python prepare_one_v_all_data.py --output_path data/sentence_mf_one_v_all.csv
+
+python construct_mftc_data.py --output_path data/mftc_preprocessed.csv
+
+python construct_mfrc_data.py --output_path data/mfrc_preprocessed.csv
+
+python merge_mf_corpora.py
+```
+
 
 ## Modifications to original repository
 
