@@ -44,6 +44,7 @@ This section documents the changes done to the files and code from the original 
 | `requirements.txt` | Changed pip module versions to work with Python 3.11 |
 | `.gitignore` | Commented out 'data' to allow the dataset and lexicon folder to be included in the remote repository. |
 | `scripts/mfd/data/lexicons` | Created the `data` and `data/lexicons` folders to house downloaded dataset files. |
+| `scripts/construct_emfd_data.py` | Added `import nltk` statement to make it work. |
 
 ## Data and External Resources
 
@@ -79,7 +80,8 @@ The **MFD** and **MFD 2.0** resources are publicly accessible for academic resea
 
 ### Lexicon Official Sources
 
-- MFD (original): https://moralfoundations.org  
+- MFD (original): https://moralfoundations.org/wp-content/uploads/files/downloads/moral%20foundations%20dictionary.dic
+  - MFD (CSV version): https://github.com/negar-mokhberian/Moral_Foundation_FrameAxis/blob/main/moral_foundation_dictionaries/MFD_original.csv
 - MFD 2.0 (OSF): https://osf.io/whjt2  
 - eMFD (OSF): https://osf.io/ufdcz  
 
