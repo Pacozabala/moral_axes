@@ -4,7 +4,36 @@ This is to track changes and acknowledge the prior work done in this repository.
 
 ## Usage Guidelines
 
+### Installation
+
 Please use a Python 3.11 environment to run the modules. All required libraries can be found in the `requirements.txt` file.
+
+To download SpaCy's en_core_web model, run the following command in your terminal:
+```bash
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
+```
+
+### Model Usage
+
+In the `scripts\mfd` folder, run the following command to merge the lexicons into one:
+```bash
+python build_mfd_lexicons.py
+```
+
+Then in the same folder, run the following to process the datasets. These will convert them all into CSVs with normalized labels and merge them all into one dataset. Please note that depending on the device, these commands may take a while to process.
+
+```bash
+python construct_emfd_data.py --output_path data/sentence_mf_counts.csv
+
+python prepare_one_v_all_data.py --output_path data/sentence_mf_one_v_all.csv
+
+python construct_mftc_data.py --output_path data/mftc_preprocessed.csv
+
+python construct_mfrc_data.py --output_path data/mfrc_preprocessed.csv
+
+python merge_mf_corpora.py
+```
+
 
 ## Modifications to original repository
 
@@ -15,6 +44,7 @@ This section documents the changes done to the files and code from the original 
 | `requirements.txt` | Changed pip module versions to work with Python 3.11 |
 | `.gitignore` | Commented out 'data' to allow the dataset and lexicon folder to be included in the remote repository. |
 | `scripts/mfd/data/lexicons` | Created the `data` and `data/lexicons` folders to house downloaded dataset files. |
+| `scripts/construct_emfd_data.py` | Added `import nltk` statement to make it work. |
 
 ## Data and External Resources
 
@@ -50,7 +80,8 @@ The **MFD** and **MFD 2.0** resources are publicly accessible for academic resea
 
 ### Lexicon Official Sources
 
-- MFD (original): https://moralfoundations.org  
+- MFD (original): https://moralfoundations.org/wp-content/uploads/files/downloads/moral%20foundations%20dictionary.dic
+  - MFD (CSV version): https://github.com/negar-mokhberian/Moral_Foundation_FrameAxis/blob/main/moral_foundation_dictionaries/MFD_original.csv
 - MFD 2.0 (OSF): https://osf.io/whjt2  
 - eMFD (OSF): https://osf.io/ufdcz  
 
